@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<branding name="JCIBrandingPOC">
+  <imagefiles>
+    <file name="logo.png" folder="JCIBrandingPOC" />
+  </imagefiles>
+  <cssfiles>
+    <file name="JCIBrandingPOC.css" folder="JCIBrandingPOC" />
+  </cssfiles>
+  <jsfiles>
+    <file name="JciScript.js" folder="JCIBrandingPOC" />
+    <file name="Jquery.js" folder="JCIBrandingPOC" />
+  </jsfiles>
+  <masterpages>
+    <masterpage name="JCIBrandingPOC.master"/>
+  </masterpages>
+</branding>

@@ -1,0 +1,8 @@
+﻿The app identifier has been successfully created. 
+
+
+Client Id:    fea69331-66ae-4381-bf15-1e38f794c91a  
+Client Secret:    n3AeDk7LS8JyWdVbqjZCpz7P/DcYMNl3OwqrUAez33c=  
+Title:    JCI Branding POC  
+App Domain:    masterpage.azurewebsites.net  
+Redirect URI:    https://masterpage.azurewebsites.net/pages/default.aspx  

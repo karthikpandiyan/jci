@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="c74c8548-1ef7-4d75-b5b6-9dc9a058a1ca" solutionId="c74c8548-1ef7-4d75-b5b6-9dc9a058a1ca" resetWebServer="false" sharePointProductVersion="16.0" name="JCI.Branding.POCApp" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="9aa29f7a-4f32-497f-a75c-236a85240276" />
+  </features>
+</package>

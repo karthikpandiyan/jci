@@ -1,0 +1,953 @@
+﻿@font-face {
+    font-family: 'Segoe UI Light';
+    src: url('fonts/SegoeUILight.eot');
+    src: local("Segoe UI Light"), local("Segoe Light"), local("Segoe WP Light"), url('fonts/SegoeUILight.eot?#iefix') format('embedded-opentype'), url('fonts/SegoeUILight.woff') format('woff'), url('fonts/SegoeUILight.ttf') format('truetype'), url('fonts/SegoeUILight.svg#web') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Segoe UI Semibold';
+    src: url('fonts/segoe_ui_semibold.eot');
+    src: local("Segoe UI Semibold"), local("Segoe Semibold"), local("Segoe WP Semibold"), url('fonts/segoe_ui_semibold.eot?#iefix') format('embedded-opentype'), url('fonts/segoe_ui_semibold.woff') format('woff'), url('fonts/segoe_ui_semibold.ttf') format('truetype'), url('fonts/segoe_ui_semibold.svg#web') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+b, strong {
+    font-family: 'Segoe UI Semibold', 'Segoe UI', Tahoma, Arial, sans-serif;
+    font-weight: 400;
+}
+/*
+a {
+    color: #08338f;
+    text-decoration: none;
+}
+a:visited {
+    color: #08338f;
+}
+*/
+.JCIContainer {
+    max-width: 1280px!important;
+    padding: 0 5px;
+    margin: 0 auto;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+.clearfix {
+    display: inline-block;
+}
+html[xmlns] .clearfix {
+    display: block;
+}
+.ms-dlgOverlay {
+    height: 100%!important;
+    width: 100%!important;
+}
+ul.cbs-List {
+    display: block!important;
+}
+#ctl00_PlaceHolderAdditionalPageHead_editmodestyles~form .JCIContainer {
+    min-width: 960px;
+}
+.ms-welcome-root {
+    padding: 0 8px!important;
+}
+.ms-core-menu-root {
+    height: 20px!important;
+}
+.ms-siteactions-normal {
+}
+a.InActiveLinks:hover {
+    text-decoration: none!important;
+    cursor: default;
+}
+.ms-siteactions-imgspan {
+    height: 16px!important;
+    overflow: hidden!important;
+}
+.ms-core-menu-list li {
+    display: block!important;
+}
+/* suite bar
+#suiteBarLeft {
+    display: none;
+}
+#suiteBarButtons {
+    background-color: #eee!important;
+    height: auto;
+}
+#suiteBarRight {
+    background-color: transparent!important;
+    padding: 0!important;
+    position: relative;
+}
+.ms-core-deltaSuiteBarRight {
+    background-color: #eee;
+}
+*/
+div.ms-welcome-root {
+    height: auto!important;
+    line-height: none!important;
+}
+#welcomeMenuBox {
+    margin-left: 0;
+    padding-left: 0;
+}
+#welcomeMenuBox span, #welcomeMenuBox span a {
+    font-size: 12px;
+}
+.ms-welcome-root {
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    border-right: none!important;
+}
+#TopNavigationCustom {
+    position: relative;
+    min-width: 1%;
+    display: block;
+    top: 5px;
+}
+.TopNavigation {
+    list-style: none;
+    margin: 0;
+    float: left;
+    padding-left: 0;
+    display: block;
+}
+.TopNavigation li {
+    display: block;
+    float: left;
+    margin-left: 0;
+    padding-left: 0;
+}
+.JCITopNavigationLinks {
+    padding-right: 18px;
+    font-size: 13px;
+    position: relative;
+    z-index: 1;
+}
+.TopNavigation li a {
+    text-decoration: none;
+    color: #404040;
+    display: block;
+    margin-left: 0;
+    padding-left: 0;
+}
+.TopNavigation li a:hover {
+    text-decoration: underline;
+}
+a.ms-core-menu-root {
+    overflow: hidden;
+    padding-bottom: 0!important;
+    color: #404040!important;
+    font-size: 13px!important;
+}
+.ms-rteFontFace-1 {
+    -ms-name: "Segoe UI";
+    font-family: "Segoe UI", Tahoma;
+}
+.ms-rteFontFace-2 {
+    -ms-name: "Segoe UI";
+    font-family: "Segoe UI", Tahoma;
+}
+.ms-rteFontFace-3 {
+    -ms-name: "Segoe UI";
+    font-family: "Segoe UI", Tahoma;
+}
+.ms-rteFontFace-4 {
+    -ms-name: "Segoe UI";
+    font-family: "Segoe UI", Tahoma;
+}
+.ms-rteFontFace-5 {
+    -ms-name: "Segoe UI";
+    font-family: "Segoe UI", Tahoma;
+}
+.ms-rteFontFace-6 {
+    -ms-name: "Segoe UI";
+    font-family: "Segoe UI", Tahoma;
+}
+.ms-rteFontFace-7 {
+    -ms-name: "Segoe UI";
+    font-family: "Segoe UI", Tahoma;
+}
+.ms-rteFontFace-8 {
+    -ms-name: "Segoe UI";
+    font-family: "Segoe UI", Tahoma;
+}
+.ms-rteFontFace-9 {
+    -ms-name: "Segoe UI";
+    font-family: "Segoe UI", Tahoma;
+}
+.ms-rteFontFace-10 {
+    -ms-name: "Segoe UI";
+    font-family: "Segoe UI", Tahoma;
+}
+.ms-rteFontFace-11 {
+    -ms-name: "Segoe UI";
+    font-family: "Segoe UI", Tahoma;
+}
+.ms-rteFontFace-12 {
+    -ms-name: "Segoe UI";
+    font-family: "Segoe UI", Tahoma;
+}
+#welcomeMenuBox .ms-welcome-hover {
+    background: none;
+    border-color: #eee;
+}
+#welcomeMenuBox .ms-core-menu-list {
+    min-width: 80px;
+}
+.ms-welcome-hover, .ms-siteactions-hover {
+    background: none;
+    border-color: #eee;
+}
+#s4-ribbonrow {
+}
+div.UtilityNavigation {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    height: 30px;
+}
+div.UtilityNavigation div.SiteLogo {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+.Messages {
+    position: relative;
+    top: 10px;
+    margin-top: 0;
+}
+#SignIn {
+    position: relative;
+    top: -6px;
+}
+/* commented for suitebar widh issue
+#ms-designer-ribbon, #ms-designer-ribbon div {
+    min-width: 1%!important;
+    width: auto;
+}
+*/
+#globalNavBox {
+    background-color: #fff!important;
+}
+#RibbonContainer-TabRowRight {
+    padding-right: 0!important;
+    margin-right: 0;
+}
+div.ms-cui-TabRowRight {
+    width: auto;
+    line-height: normal;
+}
+.ms-cui-topBar2, .ms-cui-topBar2.ms-browseTabContainer {
+    background-color: #fff!important;
+    border-bottom-color: #fff;
+}
+.ms-core-menu-item:hover {
+    background-color: #ccc!important;
+    color: #fff!important;
+}
+.ms-core-menu-item:hover a {
+    color: #fff!important;
+}
+.ms-cui-tts-scale-2 .ms-cui-tt-a {
+    width: auto!important;
+}
+.ms-cui-tt-span {
+    padding-left: 10px!important;
+    padding-right: 10px!important;
+}
+.ms-cui-ribbonToolBars {
+    background: #fff!important;
+}
+.ms-cui-ribbon, .ms-cui-menu, .ms-cui-toolbar-toolbar {
+    font-size: 11px;
+    color: #6c6e70;
+}
+#HeaderNav {
+    margin: 0 auto;
+    max-width: 1280px;
+    position: relative;
+    background-color: transparent;
+}
+#HeaderNav li {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#HeaderNav ul {
+    border: 0;
+    padding: 0;
+    position: relative;
+}
+#HeaderNav ul:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+#HeaderNav:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+a.JCIHeaderMainLinks {
+    text-decoration: none !important;
+}
+#HeaderNav a {
+    color: #202020;
+    display: inline-block;
+    line-height: 1.85em;
+    padding: 0 16px 0 10px;
+    -webit-transition: all 150ms ease-in;
+    transition: all 150ms ease-in;
+}
+#HeaderNav a:hover {
+}
+#HeaderNav ul.headUl {
+    list-style: none;
+}
+#HeaderNav>ul>li {
+    float: left;
+}
+#HeaderNav .has-sub {
+    z-index: 1;
+}
+#HeaderNav .has-sub1 a {
+    background-image: none;
+    padding-right: 0;
+}
+.headUl li {
+    margin-right: 16px !important;
+    padding-right: 10px !important;
+}
+#HeaderNav li>a {
+    background-image: url('../Images/Chevron.png');
+    background-repeat: no-repeat;
+    background-position: right 50%;
+    font-family: "Segoe UI Light", "Segoe UI", Tahoma, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 21px;
+    cursor: pointer;
+    padding: 0 16px 0 10px;
+}
+#HeaderNav .has-sub ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    float: left;
+    width: 100%}
+.globalNav {
+    display: block;
+    margin: 0 30%;
+    width: 100%}
+.mega-hold {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .4);
+    opacity: .95;
+    background-color: #ccc !important;
+    padding-bottom: 10px;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    padding: 0 1000em;
+    margin: 0 -1000em!important;
+    z-index: 100;
+    width: 100%}
+.mega-hold a {
+    line-height: 1.6em;
+}
+.mega-hold h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+.mega-section {
+    font-size: 9.5pt;
+    width: auto;
+    margin-right: 12px;
+    display: inline-table;
+    vertical-align: top;
+}
+.headNavalign {
+    margin: 0 0;
+    padding: 12px 16px;
+    text-align: left;
+    width: 100%}
+div.mega-hold {
+    overflow: hidden;
+}
+#HeaderNav ul.headUI {
+    display: block;
+}
+.JCISubHeaderLinks {
+    font-size: 14px!important;
+    font-family: "Segoe UI Semibold", "Segoe UI", Segoe, Tahoma, Arial, sans-serif!important;
+}
+.SearchArea, .ms-srch-sb {
+    right: 10px;
+    top: 15px;
+}
+#s4-titlerow div.SearchArea2 {
+    float: right;
+    margin-top: 6px;
+}
+.ms-srch-sb>input {
+    font-size: 13px;
+}
+.ms-helperText, input.ms-helperText {
+    color: #999;
+}
+#sideNavBox {
+    min-width: 164px;
+}
+#DeltaPlaceHolderMain {
+    padding-left: 200px;
+}
+#sideNavBox .menu-item-text {
+    color: #08338f;
+}
+#sideNavBox .ms-core-listMenu-verticalBox>.ms-core-listMenu-item, #sideNavBox .ms-core-listMenu-verticalBox li.static>.ms-core-listMenu-item {
+    padding: 5px 0;
+}
+#sideNavBox .ms-core-listMenu-selected:link, #sideNavBox .ms-core-listMenu-selected:visited, #sideNavBox .ms-core-listMenu-selected {
+    background: none;
+}
+#sideNavBox li>a.ms-core-listMenu-item.ms-core-listMenu-selected:hover, #sideNavBox li>a.ms-core-listMenu-item:hover, li>a.ms-core-listMenu-item:active {
+    background: none;
+}
+#sideNavBox .ms-listMenu-editLink {
+    display: none;
+}
+.OverflowXHidden {
+    overflow-x: hidden;
+}
+.ms-fullscreenmode #DeltaPlaceHolderMain {
+    padding-left: 0;
+}
+#footer {
+    width: 100%;
+    float: left;
+    padding-bottom: 10px;
+    background-color:  #eee;
+    border-top: 10px solid #00c8ff;
+    clear: both;
+    overflow: hidden;
+}
+#footer>.JCIContainer {
+    margin-top: 20px;
+    padding: 0 10px;
+}
+#footer a {
+    text-decoration: none;
+    color: #404040;
+    font-weight: normal;
+}
+#footer a:hover {
+    text-decoration: underline;
+}
+#footer h2 {
+    line-height: normal;
+}
+.FooterColumn {
+    color: #404040;
+    margin-right: 30px;
+    max-width: 17%}
+h2.FooterColumnTitle {
+    color: #404040;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+.JCIFooterLinks a {
+    font-size: 12px!important;
+    padding: 5px 0 5px 0;
+}
+.copyrightLink {
+    font-size: 12px!important;
+}
+#footer>.JCIContainer {
+    display: table;
+    width: 100%}
+#footer>.JCIContainer>div {
+    display: table-cell;
+    float: none;
+}
+* {
+    margin: 0;
+}
+body {
+    overflow: hidden!important;
+}
+html.ms-dialog body {
+    overflow-y: visible;
+}
+#wrapper {
+    min-height: 100%;
+    height: auto!important;
+    height: 100%;
+    margin: 0 auto -220px;
+    overflow: visible!important;
+}
+#footer {
+    height: 200px;
+    clear: both;
+}
+.push {
+    height: 220px;
+}
+body #s4-workspace {
+    margin-bottom: -220px;
+}
+html>.ms-core-needIEFilter {
+    filter: none;
+}
+span.LightBlue {
+    color: #18bde2!important;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+span.DarkBlue {
+    padding: 0;
+    margin: 0;
+    color: #052890!important;
+}
+.Hidden {
+    display: none;
+    visibility: hidden;
+}
+.PageTitle {
+    font-weight: normal;
+    font-size: 1.65em;
+    display: inline-block;
+}
+h1.SiteTitle {
+  
+  padding-left:41px;}
+.SubTitles {
+    font-weight: lighter;
+    font-size: 20px;
+}
+.LeftNavigationText {
+    font-size: 12px;
+    color: #08338f;
+}
+.NormalText {
+    font-size: 13px;
+    font-weight: normal;
+}
+.TileSingle {
+    width: 145px;
+    height: 145px;
+    overflow: hidden;
+}
+.TitleBarDouble {
+    width: 300px;
+    height: 32px;
+    overflow: hidden;
+}
+.TitleBarSingle {
+    width: 145px;
+    height: 32px;
+    overflow: hidden;
+}
+.FeaturedContent {
+    width: 609px;
+    height: 300px;
+    overflow: hidden;
+}
+.BorderBottom {
+    border-bottom: 4px solid #00c8ff;
+}
+.SteelGray {
+    background-color: #eee;
+}
+.CopyWrite {
+    margin-top: 20px;
+}
+#s4-titlerow {
+    padding: 0 10px;
+    height: 50px;
+}
+.ms-dialog div#DeltaPlaceHolderMain {
+    padding-left: 0;
+}
+#sideNavBox li.ms-storefront-divider {
+    margin-left: 0;
+}
+.ms-dialog div.BorderBottom {
+    display: none;
+}
+.JCIContainer div#globalNavBox {
+    filter: none;
+}
+.ms-dialog div.JCIContainer {
+    padding-left: 0;
+    padding-right: 0;
+}
+.ms-dialog div#wrapper {
+    min-height: inherit;
+}
+.ms-rtestate-field h1, h1.ms-rteElement-H1, .ms-rtestate-field h2, h2.ms-rteElement-H2, h1.ms-rteElement-H1B, h2.ms-rteElement-H2B, .ms-rtestate-field p, p.ms-rteElement-P, .ms-rtestate-field ul, .ms-rtestate-field ol {
+    margin-bottom: 8px;
+}
+.tableCol-75, .tableCol-50, .tableCol-33, .tableCol-30, .tableCol-25 {
+    vertical-align: top;
+}
+.cell-margin {
+    margin: 0;
+}
+.ms-webpart-zone {
+    display: table;
+    padding: 4px;
+}
+.ms-socialCommentPaging {
+    font-size: 10pt !important;
+    font-family: inherit !important;
+    padding-bottom: 10px !important;
+}
+.ms-socialCommentPaging .socialcomment-pagelink img {
+    color: #0072bc;
+    text-decoration: none;
+    vertical-align: middle;
+    padding: 5px;
+}
+.ms-socialCommentItem .socialcomment-image {
+    vertical-align: middle;
+    width: 32px;
+    height: 32px;
+    margin-top: 1px;
+    border: 0;
+}
+.ms-socialCommentItem .socialcomment-image img {
+    min-width: 48px;
+}
+.ms-socialCommentItem .socialcomment-cmdlink a {
+    font-size: 12px;
+    color: #08338f !important;
+}
+.ms-socialCommentEdit {
+    padding-top: 0 !important;
+}
+.ms-socialCommentItem .socialcomment-bottom {
+    padding-bottom: 2em;
+}
+table.ms-socialCommentItem {
+    margin-bottom: 0;
+}
+#msFontFamily-1 {
+    display: none !important;
+}
+tr.ms-rteTableHeaderRow-0, tr.ms-rteTableHeaderRow-1, tr.ms-rteTableHeaderRow-2, tr.ms-rteTableHeaderRow-3, tr.ms-rteTableHeaderRow-4, tr.ms-rteTableHeaderRow-5, tr.ms-rteTableHeaderRow-6, tr.ms-rteTableHeaderRow-7, tr.ms-rteTableHeaderRow-8, tr.ms-rteTableHeaderRow-9, tr.ms-rteTableHeaderRow-10 {
+    font-family: "Segoe UI Semilight", "Segoe UI", "Segoe", Tahoma, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+.ms-rteTable-default>tbody>tr>td, .ms-rteTable-default>tbody>tr>th, .ms-rteTable-0>tbody>tr>td, .ms-rteTable-0>tbody>tr>th, .ms-rteTable-1>tbody>tr>td, .ms-rteTable-1>tbody>tr>th, .ms-rteTable-2>tbody>tr>td, .ms-rteTable-2>tbody>tr>th, .ms-rteTable-3>tbody>tr>td, .ms-rteTable-3>tbody>tr>th, .ms-rteTable-4>tbody>tr>td, .ms-rteTable-4>tbody>tr>th, .ms-rteTable-5>tbody>tr>td, .ms-rteTable-5>tbody>tr>th, .ms-rteTable-6>tbody>tr>td, .ms-rteTable-6>tbody>tr>th, .ms-rteTable-7>tbody>tr>td, .ms-rteTable-7>tbody>tr>th, .ms-rteTable-8>tbody>tr>td, .ms-rteTable-8>tbody>tr>th, .ms-rteTable-9>tbody>tr>td, .ms-rteTable-9>tbody>tr>th, .ms-rteTable-10>tbody>tr>td, .ms-rteTable-10>tbody>tr>th {
+    padding: 4px 8px;
+    line-height: 1.4em;
+    color: #333;
+    border: 1px solid transparent;
+}
+.ms-rteTable-2 tr.ms-rteTableOddRow-2 td, .ms-rteTable-2 tr.ms-rteTableEvenRow-2 td {
+    border-top-color: #ddd;
+    border-bottom-color: #ddd;
+}
+.ms-rteTable-3, .ms-rteTable-3>tbody>tr>td, .ms-rteTable-3>tbody>tr>th {
+    border: 1px solid #ddd;
+}
+.ms-rteTable-4, .ms-rteTable-4>tbody>tr>td, .ms-rteTable-4>tbody>tr>th, .ms-rteTable-5, .ms-rteTable-5>tbody>tr>td, .ms-rteTable-5>tbody>tr>th, .ms-rteTable-6, .ms-rteTable-6>tbody>tr>td, .ms-rteTable-6>tbody>tr>th, .ms-rteTable-7, .ms-rteTable-7>tbody>tr>td, .ms-rteTable-7>tbody>tr>th, .ms-rteTable-8, .ms-rteTable-8>tbody>tr>td, .ms-rteTable-8>tbody>tr>th, .ms-rteTable-9, .ms-rteTable-9>tbody>tr>td, .ms-rteTable-9>tbody>tr>th, .ms-rteTable-10, .ms-rteTable-10>tbody>tr>td, .ms-rteTable-10>tbody>tr>th {
+    border: 1px solid #ddd;
+}
+.ms-rteTable-1 tr.ms-rteTableOddRow-1, .ms-rteTable-3 tr.ms-rteTableOddRow-3, .ms-rteTable-6 tr.ms-rteTableOddRow-6 {
+    background-color: #eee;
+}
+.ms-rteTable-2 tr.ms-rteTableHeaderRow-2, .ms-rteTable-2 tr.ms-rteTableFooterRow-2, .ms-rteTable-2 tr.ms-rteTableHeaderRow-2>th, .ms-rteTable-2 tr.ms-rteTableFooterRow-2>th, .ms-rteTable-2 tr.ms-rteTableFooterRow-2>td, .ms-rteTable-6 tr.ms-rteTableHeaderRow-6, .ms-rteTable-6 tr.ms-rteTableFooterRow-6, .ms-rteTable-6 tr.ms-rteTableHeaderRow-6>th, .ms-rteTable-6 tr.ms-rteTableFooterRow-6>th, .ms-rteTable-6 tr.ms-rteTableFooterRow-6>td {
+    background-color: #666;
+    color: #fafafa;
+}
+.ms-rteTable-5 tr.ms-rteTableHeaderRow-5, .ms-rteTable-5 tr.ms-rteTableFooterRow-5, .ms-rteTable-5 tr.ms-rteTableHeaderRow-5>th, .ms-rteTable-5 tr.ms-rteTableFooterRow-5>th, .ms-rteTable-5 tr.ms-rteTableFooterRow-5>td {
+    background-color: #08338f;
+    color: #fff;
+}
+.ms-rteTable-7 tr.ms-rteTableHeaderRow-7, .ms-rteTable-7 tr.ms-rteTableFooterRow-7, .ms-rteTable-7 tr.ms-rteTableHeaderRow-7>th, .ms-rteTable-7 tr.ms-rteTableFooterRow-7>th, .ms-rteTable-7 tr.ms-rteTableFooterRow-7>td {
+    background-color: #5fc12f;
+    color: #fff;
+}
+.ms-rteTable-8 tr.ms-rteTableHeaderRow-8, .ms-rteTable-8 tr.ms-rteTableFooterRow-8, .ms-rteTable-8 tr.ms-rteTableHeaderRow-8>th, .ms-rteTable-8 tr.ms-rteTableFooterRow-8>th, .ms-rteTable-8 tr.ms-rteTableFooterRow-8>td {
+    background-color: #00c4b5;
+    color: #fff;
+}
+.ms-rteTable-9 tr.ms-rteTableHeaderRow-9, .ms-rteTable-9 tr.ms-rteTableFooterRow-9, .ms-rteTable-9 tr.ms-rteTableHeaderRow-9>th, .ms-rteTable-9 tr.ms-rteTableFooterRow-9>th, .ms-rteTable-9 tr.ms-rteTableFooterRow-9>td {
+    background-color: #00c8ff;
+    color: #fff;
+}
+.ms-rteTable-10 tr.ms-rteTableHeaderRow-10, .ms-rteTable-10 tr.ms-rteTableFooterRow-10, .ms-rteTable-10 tr.ms-rteTableHeaderRow-10>th, .ms-rteTable-10 tr.ms-rteTableFooterRow-10>th, .ms-rteTable-10 tr.ms-rteTableFooterRow-10>td {
+    background-color: #faa519;
+    color: #fff;
+}
+.ms-rteTableGrid, .ms-rteTableGrid td, .ms-rteTableGrid, .ms-rteTableGrid th {
+    border: 1px #777 dotted !important;
+}
+#Ribbon\.WikiPageTab\.EditAndCheckout\.SaveEdit\.Menu\.EditInDesigner {
+    display: none;
+}
+.ms-rteImage-0 {
+    -ms-name: "No border"}
+.ms-rteImage-1 {
+    -ms-name: "Thin line border";
+    /* [ReplaceColor(themeColor: "BodyText", opacity:"1")] */background-color:#444;
+    /* [ReplaceColor(themeColor: "BodyText-Darker", opacity:"1")] */border:1px solid #333;
+    /* [RecolorImage(themeColor: "SubtleBodyText", method:"Tinting")] */background-image:url("/_layouts/15/images/tabtitlerowbottombg.png?rev=23");
+    background-repeat: repeat-x;
+    background-position: top;
+}
+.ms-rteImage-2 {
+    -ms-name: "Table border";
+    padding: 2px;
+    /* [ReplaceColor(themeColor: "SubtleLines")] */border-top:1px solid #c6c6c6;
+    /* [ReplaceColor(themeColor: "Lines")] */border-bottom:1px solid #ababab;
+    /* [ReplaceColor(themeColor: "SubtleLines")] */border-left:1px solid #c6c6c6;
+    /* [ReplaceColor(themeColor: "Lines")] */border-right:1px solid #ababab;
+}
+.ms-rteImage-3 {
+    -ms-name: "Dark border";
+    padding: 8px;
+    /* [ReplaceColor(themeColor: "BodyText-Darker", opacity:"1")] */background-color:#333;
+    /* [ReplaceColor(themeColor: "BodyText", opacity:"1")] */border:1px solid #444;
+    /* [RecolorImage(themeColor: "BodyText-Darker", method:"Tinting")] */background-image:url("/_layouts/15/images/tabtitlerowbottombg.png?rev=23");
+    background-attachment: fixed;
+    background-repeat: repeat-x;
+    background-position: left bottom;
+}
+.ms-rteImage-4 {
+    -ms-name: "Shadow";
+    padding: 0;
+    /* [ReplaceColor(themeColor: "BackgroundOverlay-Lightest", opacity:"1")] */background-color:transparent;
+    /* [ReplaceColor(themeColor: "SubtleLines")] */border-top:1px solid #c6c6c6;
+    /* [ReplaceColor(themeColor: "Lines")] */border-bottom:1px solid #ababab;
+    /* [ReplaceColor(themeColor: "SubtleLines")] */border-left:1px solid #c6c6c6;
+    /* [ReplaceColor(themeColor: "Lines")] */border-right:1px solid #ababab;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+}
+@media(max-width:1200px) {
+    .spjs-tile-detailsbox, .spjs-tile-root, .spjs-tile-row-wrap, div.spjs-tile-content, div.spjs-tile-content>div>span, div.spjs-tile-wrap {
+    display: block;
+    width: 100%!important;
+}
+.JCIContainer {
+    padding: 0 20px;
+}
+}@media(max-width:1023px) {
+    .JCIContainer {
+    padding: 0 20px;
+}
+.TopNavigation li a {
+    font-size: 12px;
+}
+#HeaderNav .has-sub1 a, .JCIHeaderMainLinks {
+    font-size: 13pt!important;
+}
+.JCISubHeaderLinks {
+    font-size: 14px!important;
+}
+.headUl li {
+    margin-right: 0!important;
+}
+#HeaderNav ul {
+    margin-left: 0!important;
+}
+}@media(max-width:850px) {
+    #TopNavigationCustom {
+    width: 100%;
+    text-align: center;
+}
+.TopNavigation {
+    line-height: 180%;
+    margin-bottom: 4px;
+    float: none;
+}
+.TopNavigation li {
+    display: inline-block;
+    float: none;
+}
+div.UtilityNavigation {
+    height: auto;
+    padding: 5px 10px;
+}
+.SiteLogo {
+    display: none;
+}
+#HeaderNav .has-sub1 a, #HeaderNav a.JCIHeaderMainLinks {
+    font-size: 11pt!important;
+    background-size: 10px;
+    margin-right: 12px;
+}
+}@media(max-width:641px) {
+    .JCITopNavigationLinks, .ms-core-menu-root {
+    padding-right: 20px;
+}
+#DeltaPlaceHolderSearchArea, .JCIContainer .clearfix {
+    display: none;
+}
+.tableCol-33 {
+    display: block;
+    min-width: 100%}
+.content-left {
+    margin-right: 0!important;
+}
+.content-right {
+    display: none!important;
+}
+.featured-news .featured-news-caption-title {
+    font-size: 1.2em!important;
+}
+.featured-news .featured-news-caption {
+    font-size: .9em;
+}
+#DeltaPlaceHolderMain {
+    padding-left: 0;
+}
+#sideNavBox {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+}
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    width: 100%!important;
+    display: block;
+    margin: auto;
+}
+}@media(max-width:480px) {
+    #HeaderNav>ul {
+    width: 100%}
+.HeaderNavHold {
+    padding: 0 10px;
+}
+#HeaderNav .has-sub1 a, #HeaderNav a.JCIHeaderMainLinks {
+    font-size: 13pt!important;
+}
+}
+
+/* new changes */
+
+#ms-designer-ribbon, #ms-designer-ribbon div {
+min-width: 1%!important;
+/* width: auto; */
+}
+
+#footer {
+width: 100%;
+float: left;
+padding-bottom: 10px;
+/* background-color: #eee; */
+border-top: 10px solid #00c8ff;
+clear: both;
+overflow: hidden;
+}
+
+
+
+/*
+.o365cs-nav-header16 .o365cs-nav-topItem {
+display: inline-block;
+vertical-align: top;
+background-color: #eee;
+}
+*/
+
+.o365cs-nav-notificationTrayContainer o365cs-topnavLinkBackground
+{
+background-color: #eee !important;
+}
+
+
+#ms-designer-ribbon, #ms-designer-ribbon div {
+min-width: 1%!important;
+/* width: auto; 
+background-color: #eee !important;*/
+}
+
+/*Hide logo*/
+
+.o365cs-base.o365cst .o365cs-o365logo {
+color: #fff;
+display: none;
+}
+
+
+.o365cs-base.o365cst .o365cs-topnavLinkBackground {
+background-color: #eee !important;
+}
+
+.o365cs-base.o365cst .o365cs-topnavBGColor {
+background-color: #eee !important;
+
+}
+
+a {
+text-decoration: none;
+color: #404040 !important;
+}
+
+a:visited {
+color: #08338f !important;
+}
+
+/*
+a {
+text-decoration: none;
+color: #404040 !important;
+display: block !important;
+margin-left: 0 !important;
+padding-left: 0 !important;
+}
+a:visited {
+color: #08338f !important;
+}
+a:visited {
+color: #639 !important;
+text-decoration: none !important;
+}
+
+*/
+
+.menu-item .menu-item-text {
+color: #202020;
+font-size: 21px;
+font-family: "Segoe UI Light","Segoe UI",Tahoma,Arial,sans-serif;
+font-weight: 300;
+}
+
+.ms-core-listMenu-horizontalBox .dynamic-children.additional-background {
+padding-right: 26px;
+background-image: url("../images/Chevron.png");
+background-repeat: no-repeat;
+background-position: right center;
+cursor: pointer;
+}
+ul.dynamic {
+background-color: #ccc;
+padding: 10px;
+border: 0px solid #d1d1d1;
+white-space: nowrap;
+word-wrap: normal;
+opacity: .95;
+box-shadow: 0 2px 4px rgba(0,0,0,.4);
+}
+li.dynamic{
+	list-style-type: none;
+}
+.dynamic.menu-item .menu-item-text {
+font-size: 16px;
+color: #202020;
+line-height: 1.85em;
+font-weight: bold;
+}
+ul.dynamic ul.dynamic .menu-item-text{font-weight:normal; font-size:14px;}
